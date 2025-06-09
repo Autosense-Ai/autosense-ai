@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoSense-Ai | Tier 1 Automotive Supplier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: #111;
+      overflow-x: hidden;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      font-weight: 800;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      animation: slideInLeft 1s ease-out;
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    .gradient-btn {
+      background: linear-gradient(to right, #ff5f6d, #ffc371);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: transform 0.3s;
+    }
+
+    .gradient-btn:hover {
+      transform: scale(1.05);
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 400px;
+      animation: floatCar 3s ease-in-out infinite;
+    }
+
+    @keyframes floatCar {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .highlight {
+      background: linear-gradient(to right, #ff5f6d, #ffc371);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+
+    .solutions {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+    }
+
+    .card {
+      flex: 1 1 30%;
+      background: #111;
+      color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      min-width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .footer {
+      margin-top: 4rem;
+      padding: 2rem;
+      text-align: center;
+      background: linear-gradient(to right, #ff5f6d, #ffc371);
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .footer button {
+      background: white;
+      color: #ff5f6d;
+      font-weight: bold;
+      padding: 0.7rem 1.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      margin-top: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .footer button:hover {
+      background: #ffe0d5;
+    }
+
+    @media (max-width: 768px) {
+      .hero, .solutions {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <section class="hero">
+      <div>
+        <h1>ENGINEERING<br>THE FUTURE<br>OF MOBILITY</h1>
+        <p>We deliver cutting-edge solutions in autonomous driving, connectivity, and electrification to drive the transition to safer, smarter, and more efficient vehicles.</p>
+        <button class="gradient-btn">GET IN TOUCH</button>
+      </div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sedan_vector_drawing.svg/1280px-Sedan_vector_drawing.svg.png" alt="Car"/>
+    </section>
+
+    <section style="margin-top: 4rem;">
+      <h2>Innovating with <span class="highlight">the Power of Automotive</span></h2>
+      <p>We leverage the latest advancements in automotive technology and our deep expertise to engineer next-generation mobility solutions for leading automakers worldwide.</p>
+    </section>
+
+    <section class="solutions">
+      <div class="card">
+        <h3>Autonomous Driving Systems</h3>
+        <p>Advanced driver assistance technologies for autonomous vehicles</p>
+      </div>
+      <div class="card">
+        <h3>Connected Car Platforms</h3>
+        <p>Integrated solutions for vehicles and V2X communication</p>
+      </div>
+      <div class="card">
+        <h3>Electric Powertrains</h3>
+        <p>High-performance electric drive systems and battery management units</p>
+      </div>
+    </section>
+
+    <div class="footer">
+      Driving Automotive Innovation.<br>
+      <button>VIEW OUR SERVICES</button>
+    </div>
+  </div>
+
+</body>
+</html>
