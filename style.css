@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.hero, .robotics, .solutions, .footer {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #ff5f6d;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.robotics .highlight {
+  color: #ff5f6d;
+  font-weight: bold;
+}
+
+.solutions .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+}
+
+.footer {
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  color: #fff;
+}
